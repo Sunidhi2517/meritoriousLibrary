@@ -1,0 +1,48 @@
+@media  only screen and  (min-width: 600px) {
+  header{
+    max-height: 45px;
+    width: 100vw;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+   
+}
+.header img{
+  max-width:  8%;
+  max-height: 35px;
+  margin: 0;
+  margin-left: 15px;
+}
+.header p{
+  color: black;
+ padding: 0px 20px;
+}
+
+
+}
+
+
+
+header{
+    height: 10%;
+    width: 100vw;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+   
+}
+.header img{
+  width: 20%;
+  height: 80%;
+  margin: 0;
+  margin-left: 15px;
+}
+.header p{
+    color: black;
+    margin: 0;
+    margin-right: 15px;
+}

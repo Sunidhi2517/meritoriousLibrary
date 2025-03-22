@@ -1,0 +1,32 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact h4{
+    margin:  0px auto;
+}
+.contact .card {
+    margin:  0px auto 10px auto;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    background: #990202;
+    box-shadow: 20px 20px 60px #bebebe,
+                  -20px -20px 60px #ffffff;
+    cursor: pointer;
+   }
+   .contact .card:hover{
+    color: #990202;
+    background-color: #ffffff;
+    font-weight: bold;
+    border: 2px solid #990202;
+    transition: none;
+   }
+a{
+    color: inherit;
+    text-decoration: none;
+}

@@ -1,0 +1,17 @@
+
+.banner{
+    width: 100vw;
+    height: 35vh;
+ 
+}
+@media   (min-width: 600px) {
+    .banner{
+        width: 100vw;
+        height: 52vh;
+     
+    }
+  }
+img{
+    width: 100%;
+    height: 100%;
+}
