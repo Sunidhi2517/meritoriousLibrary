@@ -38,7 +38,7 @@ const Queries = () => {
       {queries.length === 0 ? (
         <p>No queries available.</p>
       ) : (
-        queries.map((query) => (
+        queries.map((query) => {
           <div className="notification" key={query._id}>
             <div className="notiglow"></div>
             <div className="notiborderglow"></div>
@@ -55,7 +55,7 @@ const Queries = () => {
             </div> 
             </div>
                     </div>
-        ))
+})
       )}
         <div className="buttons">
                   <Link to='/'> <button  >Home</button></Link> 
