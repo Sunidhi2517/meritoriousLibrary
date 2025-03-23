@@ -11,7 +11,8 @@ const Queries = () => {
     axios
       .get("https://librarymeritorious.onrender.com/api/queries")
       .then((response) => {
-        setQueries(response.data);
+        console.log(response.data)
+        setQueries(response.data); 
       })
       .catch((error) => {
         console.error("Error fetching queries:", error);
@@ -39,6 +40,7 @@ const Queries = () => {
         <p>No queries available.</p>
       ) : (
         queries.map((query) => {
+          return(
           <div className="notification" key={query._id}>
             <div className="notiglow"></div>
             <div className="notiborderglow"></div>
@@ -54,7 +56,7 @@ const Queries = () => {
               <label>Resolved</label>
             </div> 
             </div>
-                    </div>
+                    </div>)
 })
       )}
         <div className="buttons">
