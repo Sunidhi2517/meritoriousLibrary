@@ -16,7 +16,7 @@ function LoginPage() {
     };
     const cookieValue = getCookie("MERITORIOUS_LIBRARY_LOGIN_STATUS@1616")
     if (cookieValue) {
-      window.location.href = '/admin';
+      window.location.href = 'admin';
      
 
     }
