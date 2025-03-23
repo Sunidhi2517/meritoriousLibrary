@@ -1,7 +1,6 @@
-
 import LoginForm from "../components/loginform";
 import { useEffect } from "react";
-import useNavigate from "react";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -14,7 +13,7 @@ function LoginPage() {
           return cookie.substring(nameEQ.length);
         }
       }
-      return null; // Cookie not found
+      return null; 
     };
     const cookieValue = getCookie("MERITORIOUS_LIBRARY_LOGIN_STATUS@1616")
     if (cookieValue) {
@@ -23,12 +22,10 @@ function LoginPage() {
 
     }
     ;
-  }, []);
+  }, [navigate]);
   return (
     <LoginForm />
   );
 }
 
 export default LoginPage;
-
-

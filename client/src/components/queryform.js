@@ -33,7 +33,7 @@ const QueryForm = () => {
     }
 
     try {
-      const response = await axios.post("https://librarymeritorious.onrender.com/api/submit", formData);
+      const response = await axios.post("https://meritoriouslibrary.onrender.com/api/submit", formData);
       alert(response.data.message);
       setFormData({ name: "", contact: "", email: "", query: "" }); // Reset form
     } catch (error) {

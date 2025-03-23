@@ -7,7 +7,15 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+
+const allowedOrigins = ["https://librarymeritorious.onrender.com"];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
 
 connectDB();
 

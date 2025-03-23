@@ -41,5 +41,28 @@ router.delete("/queries/:id", async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 });
+router.post("/login", async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    const user = await Query.findOne({ name });
+    if (!user || user.password !== password) {
+      return res.status(401).json({ error: "Invalid credentials" });
+    }
+
+    const token = jwt.sign({ userId: user._id }, "your_secret_key", { expiresIn: "1h" });
+
+    res.cookie("MERITORIOUS_LIBRARY_LOGIN_STATUS@1616", "true", {
+      httpOnly: true,
+      secure: true, 
+      sameSite: "None",
+    });
+
+    res.json({ message: "Login successful", token });
+  } catch (error) {
+    console.error("Login error:", error);
+    res.status(500).json({ error: "Server error" });
+  }
+});
 
 module.exports = router;
