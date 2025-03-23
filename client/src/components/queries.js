@@ -9,7 +9,7 @@ const Queries = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/queries")
+      .get("https://librarymeritorious.onrender.com/api/queries")
       .then((response) => {
         setQueries(response.data);
       })
@@ -20,7 +20,7 @@ const Queries = () => {
 
   const resolveQuery = async (id) => {
       try {
-        await axios.delete(`http://localhost:5000/api/queries/${id}`);
+        await axios.delete(`https://librarymeritorious.onrender.com/api/queries/${id}`);
   
         setQueries(queries.filter((query) => query._id !== id));
       } catch (error) {
