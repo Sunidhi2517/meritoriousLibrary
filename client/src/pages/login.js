@@ -1,8 +1,9 @@
 
 import LoginForm from "../components/loginform";
-import { useEffect } from "react";
+import { useEffect,useNavigate } from "react";
 
 function LoginPage() {
+  const navigate = useNavigate();
   useEffect(() => {
     const getCookie = (name) => {
       const nameEQ = name + "=";
@@ -16,7 +17,7 @@ function LoginPage() {
     };
     const cookieValue = getCookie("MERITORIOUS_LIBRARY_LOGIN_STATUS@1616")
     if (cookieValue) {
-      window.location.href = 'admin';
+      navigate('/admin')
      
 
     }
