@@ -150,14 +150,14 @@ function check(event,Params) {
       const printButton = document.getElementById("printButton");
       const HomeButton = document.getElementById("HomeButton");
       const Note = document.getElementById("Note");
-      printButton.style.visibility = 'hidden'
-      HomeButton.style.visibility = 'hidden'
-      Note.style.visibility = 'hidden'
+      printButton.style.display = 'none'
+      HomeButton.style.display = 'none'
+      Note.style.display = 'none'
 
       window.print();
-      printButton.style.visibility = 'visible';
-      HomeButton.style.visibility = 'visible';
-      Note.style.visibility = 'visible';
+      printButton.style.display = 'block';
+      HomeButton.style.display = 'block';
+      Note.style.display = 'block';
 
     }
   };
