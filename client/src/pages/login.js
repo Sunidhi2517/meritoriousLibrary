@@ -1,6 +1,7 @@
 
 import LoginForm from "../components/loginform";
-import { useEffect,useNavigate } from "react";
+import { useEffect } from "react";
+import useNavigate from "react";
 
 function LoginPage() {
   const navigate = useNavigate();
