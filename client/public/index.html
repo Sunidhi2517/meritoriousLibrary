@@ -26,11 +26,12 @@
     -->
     <title>ML</title>
     <style>
-      @media print {
-        #printButton, #HomeButton, #Note {
-          visibility: hidden !important; /* Ensure it overrides other styles */
-        }
-      }
+     @page {
+    size: A4; /* Set page size */
+  }
+  body {
+    overflow: hidden; /* Prevent extra pages */
+  }
     </style>
   </head>
   <body>
