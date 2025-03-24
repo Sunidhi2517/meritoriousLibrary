@@ -26,14 +26,17 @@
     -->
     <title>ML</title>
     <style>
-      @media print{
-        @page {
-    size: A4; /* Set page size */
+@media print{
+    @page {
+size: A4 !important;  /* Set page size */
+}
+body {
+overflow: hidden !important; /* Prevent extra pages */
+}
+#Note{
+  display: none !important;
+}
   }
-  body {
-    overflow: hidden; /* Prevent extra pages */
-  }
-      }
    
     </style>
   </head>

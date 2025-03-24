@@ -114,11 +114,11 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-@media print {
+@media print{
   @page {
-    size: A4; /* Set page size */
-  }
-  body {
-    overflow: hidden; /* Prevent extra pages */
-  }
+size: A4 !important;  /* Set page size */
+}
+body {
+overflow: hidden !important; /* Prevent extra pages */
+}
 }

@@ -13,9 +13,9 @@ a{
 
 @media print{
     @page {
-size: A4; /* Set page size */
+size: A4 !important;  /* Set page size */
 }
 body {
-overflow: hidden; /* Prevent extra pages */
+overflow: hidden !important; /* Prevent extra pages */
 }
   }
