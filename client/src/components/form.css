@@ -114,3 +114,8 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+@media print{
+  #printButton, #HomeButton, #Note{
+    display: none;
+  }
+}
