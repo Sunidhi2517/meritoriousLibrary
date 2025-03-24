@@ -10,3 +10,12 @@ a{
 ::-webkit-scrollbar {
     display: none;
 }
+
+@media print{
+    @page {
+size: A4; /* Set page size */
+}
+body {
+overflow: hidden; /* Prevent extra pages */
+}
+  }
