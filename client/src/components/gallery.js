@@ -59,7 +59,7 @@ const Gallery = () => {
           <div className="gallery-item" key={index}>
             <img
               src={image}
-              alt={Gallery item ${index + 1}}
+              alt={'gallery Content'}
               onClick={() => openModal(image)}
             />
           </div>
