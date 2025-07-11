@@ -37,9 +37,9 @@
 }
 .formItem{
     margin: 10px;
-    width: 60vw;
-    color: #116399;
-    text-transform: uppercase;
+    width: 40vw;
+    color: #000000;
+    text-transform: capitalize;
 }
 .form__group {
     position: relative;
@@ -113,12 +113,4 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
-}
-@media print{
-  @page {
-size: A4 !important;  /* Set page size */
-}
-body {
-overflow: hidden !important; /* Prevent extra pages */
-}
 }

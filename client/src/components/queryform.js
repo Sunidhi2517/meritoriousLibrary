@@ -50,7 +50,7 @@ const QueryForm = () => {
       </h1>
       <p>The Self Study Point</p>
       <form id="queryform" onSubmit={askquery}>
-        <h2>Library Membership Form</h2>
+        <h2>Library Query Form</h2>
         {query.map((item) => (
           <div className="form__group field formItem" key={item.id}>
             {item.type === "textarea" ? (

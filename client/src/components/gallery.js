@@ -14,6 +14,11 @@ import five from './assets/five.jpeg';
 import six from './assets/six.jpeg';
 import seven from './assets/seven.jpeg';
 import eight from './assets/eight.jpeg';
+import achievers1 from "./assets/achievers1.jpeg";
+import achievers2 from "./assets/achievers2.jpeg";
+import achievers3 from "./assets/achievers3.jpeg";
+import achievers4 from "./assets/achievers4.jpeg";
+
 
 
 
@@ -27,7 +32,7 @@ const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(null);
 
   const images = [
-     cabin1, cabin2, cabin3,lacker1,water,dining,one,two,three,four,five,six,seven,eight
+    achievers1, achievers2, achievers3, achievers4, cabin1, cabin2, cabin3,lacker1,water,dining,one,two,three,four,five,six,seven,eight
 
     
    
